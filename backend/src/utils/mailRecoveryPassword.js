@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 const sendEmail = async (to, subject, text, code) => {
     try {
         const info = await transporter.sendMail({
-            from: '"Soporte EPA <la.galletapez@gmail.com>', // Dirección del remitente
+            from: '"Soporte Cinemark <la.galletapez@gmail.com>', // Dirección del remitente
             to, // Dirección del destinatario
             subject, // Asunto del correo
             text, // Texto sin formato del correo
